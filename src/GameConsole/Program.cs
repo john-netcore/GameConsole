@@ -6,7 +6,7 @@ namespace GameConsole
     {
         static void Main(string[] args)
         {
-            var player = new PlayerCharacter();
+            var player = new PlayerCharacter { Name = string.Empty };
             PlayerDisplayer.Write(player);
 
             Console.ReadLine();
