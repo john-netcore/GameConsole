@@ -7,5 +7,6 @@ namespace GameConsole
         public string Name { get; set; }
         public Nullable<int> DaysSinceLastLogin { get; set; } = null; // Shorthand syntax for Nullable<T> is int?
         public Nullable<DateTime> DateOfBirth { get; set; } = null;
+        public bool? IsNoob { get; set; }
     }
 }
