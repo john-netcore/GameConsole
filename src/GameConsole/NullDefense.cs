@@ -1,8 +1,8 @@
 namespace GameConsole
 {
-    public class NullDefense : ISpecialDefence
+    public class NullDefense : SpecialDefence
     {
-        public int CalculateDamageReduction(int totalDamage)
+        public override int CalculateDamageReduction(int totalDamage)
         {
             return 0; // "do nothing behavior"
         }
