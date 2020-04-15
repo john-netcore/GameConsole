@@ -6,8 +6,13 @@ namespace GameConsole
     {
         static void Main(string[] args)
         {
-            var player = new PlayerCharacter { Name = string.Empty };
-            PlayerDisplayer.Write(player);
+            var john = new PlayerCharacter(new DiamondSkinDefence()) { Name = "John" };
+            var krolicka = new PlayerCharacter(new IronBonesDefence()) { Name = "Krolicka" };
+            var gosia = new PlayerCharacter(new NullDefense()) { Name = "Gosia" };
+
+            john.Hit(10);
+            krolicka.Hit(10);
+            gosia.Hit(10);
 
             Console.ReadLine();
         }
