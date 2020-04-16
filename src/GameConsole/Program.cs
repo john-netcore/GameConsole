@@ -14,6 +14,10 @@ namespace GameConsole
             krolicka.Hit(10);
             gosia.Hit(10);
 
+            System.Console.WriteLine();
+            PlayerDisplayer.Write(john);
+            PlayerDisplayer.Write(krolicka);
+            PlayerDisplayer.Write(gosia);
             Console.ReadLine();
         }
     }

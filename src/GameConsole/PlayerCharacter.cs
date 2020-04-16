@@ -6,7 +6,7 @@ namespace GameConsole
     {
         private readonly SpecialDefence _specialDefence;
 
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         public Nullable<int> DaysSinceLastLogin { get; set; } // Shorthand syntax for Nullable<T> is int?
         public Nullable<DateTime> DateOfBirth { get; set; }
         public bool? IsNoob { get; set; }
